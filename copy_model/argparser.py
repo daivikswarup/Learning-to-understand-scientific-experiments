@@ -11,6 +11,9 @@ parser.add_argument('--copy', dest='copy', action='store_true', help='Copy')
 parser.add_argument('--no-copy', dest='copy', action='store_false',
                     help='Don\'t copy')
 parser.set_defaults(copy=True)
+parser.add_argument('--finetune', dest='finetune', action='store_true')
+parser.add_argument('--no-finetune', dest='finetune', action='store_false')
+parser.set_defaults(finetune=True)
 parser.add_argument('--generate', dest='generate', action='store_true',
                     help='Generate')
 parser.add_argument('--no-generate', dest='generate', action='store_false',
